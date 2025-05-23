@@ -59,7 +59,7 @@ bot.on('message', async (msg) => {
             orderStates.delete(chatId);
             
             if (!text || text.length === 0) {
-                await bot.sendMessage(chatId, 'The name is mandatory!');
+                await bot.sendMessage(chatId, 'The name is mandatory.');
                 return;
             }
             
