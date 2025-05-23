@@ -99,7 +99,7 @@ bot.on('message', async (msg) => {
             }
         }
     } else {
-        await bot.sendMessage(chatId, 'Use only commands!');
+        await bot.sendMessage(chatId, 'Use only commands.');
     }
 });
 
@@ -124,7 +124,7 @@ bot.onText(/\/delete_by_id/, async (msg) => {
             return await bot.sendMessage(chatId, 'No orders found for the list');
         }
         
-        // Keep your ID available for verification
+        // Keep ID available for verification
         orderStates.set(chatId, {
             waitingForOrderId: true,
             availableIds: checkAllOrders.map(order => order.id.toString()),
