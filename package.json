@@ -1,0 +1,16 @@
+{
+  "name": "lecture3---homework",
+  "version": "1.0.0",
+  "description": "First homework with Express",
+  "main": "controller/api.js",
+  "scripts": {
+    "dev": "node controller/bot.js",
+    "start": "node controller/bot.js"
+  },
+  "private": true,
+  "dependencies": {
+    "express": "^5.1.0",
+    "node-telegram-bot-api": "^0.66.0",
+    "uuid": "^11.1.0"
+  }
+}
